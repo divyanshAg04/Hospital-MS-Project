@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Design Tokens (Dark Theme Default - Obsidian Noir) ───────────────────── */
+:root {
+  --bg-base: #080B12;
+  --bg-surface: #0F1421;
+  --bg-elevated: #161D2E;
+  --bg-hover: #1C2538;
+  --bg-overlay: rgba(8, 11, 18, 0.88);
+
+  --accent-cyan: #00C4FF;
+  --accent-violet: #8B6FFF;
+  --accent-green: #00D98B;
+  --accent-amber: #FFB547;
+  --accent-red: #FF4757;
+
+  --text-primary: #EDF0F7;
+  --text-secondary: #8896B0;
+  --text-muted: #4D5C7A;
+  --text-inverted: #080B12;
+
+  --border: #1C2335;
+  --border-strong: #2A3554;
+  --border-accent: rgba(0, 196, 255, 0.25);
+
+  /* Card inner reflection gradients */
+  --card-overlay-from: rgba(255, 255, 255, 0.03);
+  --card-overlay-to: rgba(255, 255, 255, 0.0);
+
+  /* Mapping to existing variables for compatibility */
+  --background: var(--bg-base);
+  --foreground: var(--text-primary);
+  --card-bg: var(--bg-surface);
+  --card-border: var(--border);
+  --sidebar-bg: #0A0D16;
+
+  --brand-dark: var(--bg-base);
+  --brand-surface: var(--bg-surface);
+  --brand-muted: var(--text-muted);
+  --brand-teal: var(--accent-cyan);
+
+  --font-jakarta: "DM Sans", sans-serif;
+  --font-clash: "DM Sans", sans-serif;
+  --font-jetbrains: "JetBrains Mono", monospace;
+}
+
+/* ─── Design Tokens (Light Theme Override - Clinical Alabaster) ─────────────────── */
+:root.light {
+  --bg-base: #f0f4fa;
+  --bg-surface: #ffffff;
+  --bg-elevated: #f8fafc;
+  --bg-hover: #e2ebf6;
+  --bg-overlay: rgba(255, 255, 255, 0.92);
+
+  --accent-cyan: #2563eb;
+  --accent-violet: #7c3aed;
+  --accent-green: #10b981;
+  --accent-amber: #f59e0b;
+  --accent-red: #ef4444;
+
+  --text-primary: #1a1f3c;
+  --text-secondary: #64748b;
+  --text-muted: #94a3b8;
+  --text-inverted: #ffffff;
+
+  --border: rgba(100, 116, 139, 0.15);
+  --border-strong: rgba(100, 116, 139, 0.28);
+  --border-accent: rgba(37, 99, 235, 0.25);
+
+  /* Card inner reflection gradients */
+  --card-overlay-from: rgba(255, 255, 255, 0.6);
+  --card-overlay-to: rgba(238, 244, 255, 0.35);
+
+  --background: var(--bg-base);
+  --foreground: var(--text-primary);
+  --card-bg: var(--bg-surface);
+  --card-border: var(--border);
+  --sidebar-bg: rgba(255, 255, 255, 0.92);
+
+  --brand-dark: var(--bg-base);
+  --brand-surface: var(--bg-surface);
+  --brand-muted: var(--text-muted);
+  --brand-teal: var(--accent-cyan);
+}
+
+/* ─── Base Typography & Body Styles ────────────────────────────────────────── */
+body {
+  color: var(--text-primary);
+  background: var(--bg-base);
+  font-family: var(--font-jakarta);
+  overflow-x: hidden;
+  transition: background-color 150ms ease, color 150ms ease;
+  position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: -0.02em;
+  font-family: var(--font-clash);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background-image: radial-gradient(var(--border) 1px, transparent 1px);
+  background-size: 24px 24px;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: transparent;
+}
+
+/* Global Typography line-height */
+p, span, div, td, th, li, a, button, input, label, textarea, select {
+  line-height: 1.6;
+}
+
+/* Selection */
+::selection {
+  background: rgba(0, 196, 255, 0.2);
+  color: var(--text-primary);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-cyan);
+}
+
+/* ─── Global Interactive elements overrides ───────────────────────────── */
+input, textarea, select {
+  background-color: var(--bg-surface) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 6px !important;
+  color: var(--text-primary) !important;
+  transition: all 150ms ease !important;
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--text-muted) !important;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--accent-cyan) !important;
+  box-shadow: 0 0 0 3px rgba(0, 196, 255, 0.15) !important;
+  outline: none !important;
+}
+
+/* Disabled and Loading states */
+input:disabled, button:disabled, select:disabled {
+  opacity: 0.5 !important;
+  cursor: not-allowed !important;
+}
+
+/* ─── Component Utilities ────────────────────────────────────────────── */
+@layer components {
+
+  /* ── Card (L1) ── */
+  .glass-card {
+    background: var(--bg-surface) !important;
+    border: 1px solid var(--border) !important;
+    border-radius: 10px !important;
+    padding: 16px 20px !important;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 0 0 1px var(--border) !important;
+    transition: all 150ms ease !important;
+  }
+
+  .glass-card:hover {
+    box-shadow: 0 1px 4px rgba(0,0,0,0.5), 0 0 0 1px var(--border-strong) !important;
+    border-color: var(--border-strong) !important;
+    transform: none !important; /* Premium flat look */
+  }
+
+  /* ── Dropdown (L2) ── */
+  .glass-panel {
+    background: var(--bg-elevated) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border: 1px solid var(--border) !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.7), 0 0 0 1px var(--border) !important;
+    border-radius: 6px !important;
+  }
+
+  /* ── Modal (L3) ── */
+  .fixed.z-50.glass-card, [class*="max-h-[90vh]"] {
+    background: var(--bg-elevated) !important;
+    border-radius: 14px !important;
+    box-shadow: 0 8px 48px rgba(0,0,0,0.9), 0 0 0 1px var(--border) !important;
+    border: 1px solid var(--border) !important;
+  }
+
+  /* ── Primary Button ── */
+  .btn-gradient, .bg-gradient-primary, [class*="bg-gradient-primary"] {
+    background: var(--accent-cyan) !important;
+    color: var(--text-inverted) !important;
+    font-weight: 500 !important;
+    border-radius: 6px !important;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.5) !important;
+    transition: all 150ms ease !important;
+    border: none !important;
+  }
+
+  .btn-gradient:hover, .bg-gradient-primary:hover {
+    background: #1ACCFF !important;
+    color: var(--text-inverted) !important;
+  }
+
+  .btn-gradient:active, .bg-gradient-primary:active {
+    transform: translateY(1px);
+  }
+
+  /* ── Glow Utilities ── */
+  .glow-blue, .glow-teal {
+    box-shadow: 0 0 24px rgba(0,196,255,0.12) !important;
+  }
+
+  .glow-purple {
+    box-shadow: 0 0 24px rgba(139,111,255,0.12) !important;
+  }
+
+  .glow-amber {
+    box-shadow: 0 0 24px rgba(255,181,71,0.12) !important;
+  }
+
+  .glow-red {
+    box-shadow: 0 0 24px rgba(255,71,87,0.12) !important;
+  }
+
+  .glow-green {
+    box-shadow: 0 0 24px rgba(0,217,139,0.12) !important;
+  }
+
+  /* ── Sidebar Active & Inactive Items ── */
+  .nav-active {
+    background: rgba(0, 196, 255, 0.08) !important;
+    border-left: 2px solid var(--accent-cyan) !important;
+    color: var(--accent-cyan) !important;
+    border-radius: 0 6px 6px 0 !important;
+    border-top: none !important;
+    border-bottom: none !important;
+    border-right: none !important;
+  }
+
+  .nav-inactive {
+    color: var(--text-secondary) !important;
+    border-left: 2px solid transparent !important;
+    border-radius: 0 !important;
+    background: transparent !important;
+  }
+
+  .nav-inactive:hover {
+    color: var(--text-primary) !important;
+    background: var(--bg-hover) !important;
+    border-color: transparent !important;
+  }
+
+  /* ── Scrollbar class ── */
+  .scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-strong) transparent;
+  }
+}
+
+/* ─── Keyframes ──────────────────────────────────────────────────────── */
+@keyframes fadeInUp {
+  0%   { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideInRight {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(0); }
+}
+
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position:  200% 0; }
+}
+
+/* ── Dashboard Grid Background ── */
+@keyframes crossFade {
+  0%,  100% { opacity: 0.25; }
+  50%        { opacity: 0.55; }
+}
+
+@keyframes crossFade2 {
+  0%,  100% { opacity: 0.15; }
+  50%        { opacity: 0.40; }
+}
+
+.dash-grid-bg {
+  background-image:
+    linear-gradient(rgba(14,165,233,0.18) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(14,165,233,0.18) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: crossFade 5s ease-in-out infinite;
+}
+
+.dash-cross {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: rgba(14,165,233,1);
+  position: absolute;
+  pointer-events: none;
+  user-select: none;
+  animation: crossFade2 5s ease-in-out infinite;
+}
+
+/* ── Webkit Autofill Override ── */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 100px var(--bg-base) inset !important;
+  -webkit-text-fill-color: var(--text-primary) !important;
+  box-shadow: 0 0 0 100px var(--bg-base) inset !important;
+}

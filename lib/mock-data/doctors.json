@@ -1,0 +1,1289 @@
+[
+  {
+    "id": "DR-0001",
+    "name": "Dr. Aarav Sharma",
+    "photo": "",
+    "specialty": [
+      "Interventional Cardiology",
+      "Heart Failure"
+    ],
+    "department": "Cardiology",
+    "qualifications": [
+      "MBBS",
+      "MD Cardiology"
+    ],
+    "experience": 8,
+    "languages": [
+      "English",
+      "Hindi",
+      "Spanish"
+    ],
+    "phone": "+1-555-100-2000",
+    "email": "draaravsharma@medcore.com",
+    "roomNumber": "A-101",
+    "consultationFee": 150,
+    "rating": 4.2,
+    "reviewCount": 20,
+    "status": "In Surgery",
+    "schedule": {
+      "Monday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Tuesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Wednesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Thursday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Friday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Saturday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      },
+      "Sunday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      }
+    },
+    "bio": "Dedicated specialist in Cardiology with focus on clinical excellence and empathetic patient care. Conducted over 500+ successful clinical cases."
+  },
+  {
+    "id": "DR-0002",
+    "name": "Dr. Priya Patel",
+    "photo": "",
+    "specialty": [
+      "Pediatric Cardiology",
+      "Congenital Heart Defects"
+    ],
+    "department": "Cardiology",
+    "qualifications": [
+      "MBBS",
+      "MD Cardiology"
+    ],
+    "experience": 9,
+    "languages": [
+      "English",
+      "Hindi"
+    ],
+    "phone": "+1-555-101-2001",
+    "email": "drpriyapatel@medcore.com",
+    "roomNumber": "A-102",
+    "consultationFee": 140,
+    "rating": 4.3,
+    "reviewCount": 24,
+    "status": "Available",
+    "schedule": {
+      "Monday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Tuesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Wednesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Thursday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Friday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Saturday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      },
+      "Sunday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      }
+    },
+    "bio": "Dedicated specialist in Cardiology with focus on clinical excellence and empathetic patient care. Conducted over 500+ successful clinical cases."
+  },
+  {
+    "id": "DR-0003",
+    "name": "Dr. Rohan Kapoor",
+    "photo": "",
+    "specialty": [
+      "Clinical Neurology",
+      "Stroke Medicine"
+    ],
+    "department": "Neurology",
+    "qualifications": [
+      "MBBS",
+      "MD Neurology"
+    ],
+    "experience": 10,
+    "languages": [
+      "English",
+      "Hindi"
+    ],
+    "phone": "+1-555-102-2002",
+    "email": "drrohankapoor@medcore.com",
+    "roomNumber": "B-201",
+    "consultationFee": 160,
+    "rating": 4.4,
+    "reviewCount": 28,
+    "status": "Available",
+    "schedule": {
+      "Monday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Tuesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Wednesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Thursday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Friday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Saturday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      },
+      "Sunday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      }
+    },
+    "bio": "Dedicated specialist in Neurology with focus on clinical excellence and empathetic patient care. Conducted over 500+ successful clinical cases."
+  },
+  {
+    "id": "DR-0004",
+    "name": "Dr. Ananya Iyer",
+    "photo": "",
+    "specialty": [
+      "Epilepsy Specialist",
+      "Neuro-oncology"
+    ],
+    "department": "Neurology",
+    "qualifications": [
+      "MBBS",
+      "MD Neurology"
+    ],
+    "experience": 11,
+    "languages": [
+      "English",
+      "Hindi",
+      "Spanish"
+    ],
+    "phone": "+1-555-103-2003",
+    "email": "drananyaiyer@medcore.com",
+    "roomNumber": "B-202",
+    "consultationFee": 150,
+    "rating": 4.5,
+    "reviewCount": 32,
+    "status": "Available",
+    "schedule": {
+      "Monday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Tuesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Wednesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Thursday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Friday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Saturday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      },
+      "Sunday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      }
+    },
+    "bio": "Dedicated specialist in Neurology with focus on clinical excellence and empathetic patient care. Conducted over 500+ successful clinical cases."
+  },
+  {
+    "id": "DR-0005",
+    "name": "Dr. Vikram Malhotra",
+    "photo": "",
+    "specialty": [
+      "Joint Replacement",
+      "Sports Medicine"
+    ],
+    "department": "Orthopedics",
+    "qualifications": [
+      "MBBS",
+      "MD Orthopedics"
+    ],
+    "experience": 12,
+    "languages": [
+      "English",
+      "Hindi"
+    ],
+    "phone": "+1-555-104-2004",
+    "email": "drvikrammalhotra@medcore.com",
+    "roomNumber": "C-301",
+    "consultationFee": 120,
+    "rating": 4.6,
+    "reviewCount": 36,
+    "status": "Available",
+    "schedule": {
+      "Monday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Tuesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Wednesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Thursday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Friday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Saturday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      },
+      "Sunday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      }
+    },
+    "bio": "Dedicated specialist in Orthopedics with focus on clinical excellence and empathetic patient care. Conducted over 500+ successful clinical cases."
+  },
+  {
+    "id": "DR-0006",
+    "name": "Dr. Sneha Reddy",
+    "photo": "",
+    "specialty": [
+      "Spine Surgery",
+      "Pediatric Orthopedics"
+    ],
+    "department": "Orthopedics",
+    "qualifications": [
+      "MBBS",
+      "MD Orthopedics"
+    ],
+    "experience": 13,
+    "languages": [
+      "English",
+      "Hindi"
+    ],
+    "phone": "+1-555-105-2005",
+    "email": "drsnehareddy@medcore.com",
+    "roomNumber": "C-302",
+    "consultationFee": 130,
+    "rating": 4.7,
+    "reviewCount": 40,
+    "status": "Available",
+    "schedule": {
+      "Monday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Tuesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Wednesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Thursday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Friday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Saturday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      },
+      "Sunday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      }
+    },
+    "bio": "Dedicated specialist in Orthopedics with focus on clinical excellence and empathetic patient care. Conducted over 500+ successful clinical cases."
+  },
+  {
+    "id": "DR-0007",
+    "name": "Dr. David Miller",
+    "photo": "",
+    "specialty": [
+      "General Pediatrics",
+      "Neonatology"
+    ],
+    "department": "Pediatrics",
+    "qualifications": [
+      "MBBS",
+      "MD Pediatrics"
+    ],
+    "experience": 14,
+    "languages": [
+      "English",
+      "Hindi",
+      "Spanish"
+    ],
+    "phone": "+1-555-106-2006",
+    "email": "drdavidmiller@medcore.com",
+    "roomNumber": "D-104",
+    "consultationFee": 100,
+    "rating": 4.8,
+    "reviewCount": 44,
+    "status": "Available",
+    "schedule": {
+      "Monday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Tuesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Wednesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Thursday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Friday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Saturday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      },
+      "Sunday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      }
+    },
+    "bio": "Dedicated specialist in Pediatrics with focus on clinical excellence and empathetic patient care. Conducted over 500+ successful clinical cases."
+  },
+  {
+    "id": "DR-0008",
+    "name": "Dr. Sarah Jenkins",
+    "photo": "",
+    "specialty": [
+      "Pediatric Allergy",
+      "Immunology"
+    ],
+    "department": "Pediatrics",
+    "qualifications": [
+      "MBBS",
+      "MD Pediatrics"
+    ],
+    "experience": 15,
+    "languages": [
+      "English",
+      "Hindi"
+    ],
+    "phone": "+1-555-107-2007",
+    "email": "drsarahjenkins@medcore.com",
+    "roomNumber": "D-105",
+    "consultationFee": 110,
+    "rating": 4.9,
+    "reviewCount": 48,
+    "status": "In Surgery",
+    "schedule": {
+      "Monday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Tuesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Wednesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Thursday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Friday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Saturday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      },
+      "Sunday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      }
+    },
+    "bio": "Dedicated specialist in Pediatrics with focus on clinical excellence and empathetic patient care. Conducted over 500+ successful clinical cases."
+  },
+  {
+    "id": "DR-0009",
+    "name": "Dr. Arjun Mehta",
+    "photo": "",
+    "specialty": [
+      "Medical Oncology",
+      "Immunotherapy"
+    ],
+    "department": "Oncology",
+    "qualifications": [
+      "MBBS",
+      "MD Oncology"
+    ],
+    "experience": 16,
+    "languages": [
+      "English",
+      "Hindi"
+    ],
+    "phone": "+1-555-108-2008",
+    "email": "drarjunmehta@medcore.com",
+    "roomNumber": "E-401",
+    "consultationFee": 180,
+    "rating": 5,
+    "reviewCount": 52,
+    "status": "Available",
+    "schedule": {
+      "Monday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Tuesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Wednesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Thursday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Friday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Saturday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      },
+      "Sunday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      }
+    },
+    "bio": "Dedicated specialist in Oncology with focus on clinical excellence and empathetic patient care. Conducted over 500+ successful clinical cases."
+  },
+  {
+    "id": "DR-0010",
+    "name": "Dr. Sunita Rao",
+    "photo": "",
+    "specialty": [
+      "Radiation Oncology",
+      "Breast Cancer Care"
+    ],
+    "department": "Oncology",
+    "qualifications": [
+      "MBBS",
+      "MD Oncology"
+    ],
+    "experience": 17,
+    "languages": [
+      "English",
+      "Hindi",
+      "Spanish"
+    ],
+    "phone": "+1-555-109-2009",
+    "email": "drsunitarao@medcore.com",
+    "roomNumber": "E-402",
+    "consultationFee": 170,
+    "rating": 4.2,
+    "reviewCount": 56,
+    "status": "Available",
+    "schedule": {
+      "Monday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Tuesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Wednesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Thursday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Friday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Saturday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      },
+      "Sunday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      }
+    },
+    "bio": "Dedicated specialist in Oncology with focus on clinical excellence and empathetic patient care. Conducted over 500+ successful clinical cases."
+  },
+  {
+    "id": "DR-0011",
+    "name": "Dr. Christopher Vance",
+    "photo": "",
+    "specialty": [
+      "Diagnostic Radiology",
+      "MRI & CT"
+    ],
+    "department": "Radiology",
+    "qualifications": [
+      "MBBS",
+      "MD Radiology"
+    ],
+    "experience": 18,
+    "languages": [
+      "English",
+      "Hindi"
+    ],
+    "phone": "+1-555-110-2010",
+    "email": "drchristophervance@medcore.com",
+    "roomNumber": "F-110",
+    "consultationFee": 90,
+    "rating": 4.3,
+    "reviewCount": 60,
+    "status": "Available",
+    "schedule": {
+      "Monday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Tuesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Wednesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Thursday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Friday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Saturday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      },
+      "Sunday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      }
+    },
+    "bio": "Dedicated specialist in Radiology with focus on clinical excellence and empathetic patient care. Conducted over 500+ successful clinical cases."
+  },
+  {
+    "id": "DR-0012",
+    "name": "Dr. Elena Rostova",
+    "photo": "",
+    "specialty": [
+      "Interventional Radiology",
+      "Angiography"
+    ],
+    "department": "Radiology",
+    "qualifications": [
+      "MBBS",
+      "MD Radiology"
+    ],
+    "experience": 19,
+    "languages": [
+      "English",
+      "Hindi"
+    ],
+    "phone": "+1-555-111-2011",
+    "email": "drelenarostova@medcore.com",
+    "roomNumber": "F-111",
+    "consultationFee": 120,
+    "rating": 4.4,
+    "reviewCount": 64,
+    "status": "Available",
+    "schedule": {
+      "Monday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Tuesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Wednesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Thursday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Friday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Saturday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      },
+      "Sunday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      }
+    },
+    "bio": "Dedicated specialist in Radiology with focus on clinical excellence and empathetic patient care. Conducted over 500+ successful clinical cases."
+  },
+  {
+    "id": "DR-0013",
+    "name": "Dr. Kshitij Deshmukh",
+    "photo": "",
+    "specialty": [
+      "Critical Care Medicine",
+      "Trauma Care"
+    ],
+    "department": "ICU",
+    "qualifications": [
+      "MBBS",
+      "MD ICU"
+    ],
+    "experience": 20,
+    "languages": [
+      "English",
+      "Hindi",
+      "Spanish"
+    ],
+    "phone": "+1-555-112-2012",
+    "email": "drkshitijdeshmukh@medcore.com",
+    "roomNumber": "ICU-10",
+    "consultationFee": 200,
+    "rating": 4.5,
+    "reviewCount": 68,
+    "status": "On Leave",
+    "schedule": {
+      "Monday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Tuesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Wednesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Thursday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Friday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Saturday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      },
+      "Sunday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      }
+    },
+    "bio": "Dedicated specialist in ICU with focus on clinical excellence and empathetic patient care. Conducted over 500+ successful clinical cases."
+  },
+  {
+    "id": "DR-0014",
+    "name": "Dr. Michael Chen",
+    "photo": "",
+    "specialty": [
+      "Neuro ICU",
+      "Pulmonary Critical Care"
+    ],
+    "department": "ICU",
+    "qualifications": [
+      "MBBS",
+      "MD ICU"
+    ],
+    "experience": 21,
+    "languages": [
+      "English",
+      "Hindi"
+    ],
+    "phone": "+1-555-113-2013",
+    "email": "drmichaelchen@medcore.com",
+    "roomNumber": "ICU-12",
+    "consultationFee": 210,
+    "rating": 4.6,
+    "reviewCount": 72,
+    "status": "Available",
+    "schedule": {
+      "Monday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Tuesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Wednesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Thursday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Friday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Saturday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      },
+      "Sunday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      }
+    },
+    "bio": "Dedicated specialist in ICU with focus on clinical excellence and empathetic patient care. Conducted over 500+ successful clinical cases."
+  },
+  {
+    "id": "DR-0015",
+    "name": "Dr. Aisha Al-Sayed",
+    "photo": "",
+    "specialty": [
+      "Emergency Medicine",
+      "Acute Trauma"
+    ],
+    "department": "Emergency",
+    "qualifications": [
+      "MBBS",
+      "MD Emergency"
+    ],
+    "experience": 22,
+    "languages": [
+      "English",
+      "Hindi"
+    ],
+    "phone": "+1-555-114-2014",
+    "email": "draishaalsayed@medcore.com",
+    "roomNumber": "ER-01",
+    "consultationFee": 150,
+    "rating": 4.7,
+    "reviewCount": 76,
+    "status": "In Surgery",
+    "schedule": {
+      "Monday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Tuesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Wednesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Thursday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Friday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Saturday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      },
+      "Sunday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      }
+    },
+    "bio": "Dedicated specialist in Emergency with focus on clinical excellence and empathetic patient care. Conducted over 500+ successful clinical cases."
+  },
+  {
+    "id": "DR-0016",
+    "name": "Dr. Marcus Thorne",
+    "photo": "",
+    "specialty": [
+      "Disaster Medicine",
+      "Toxicology"
+    ],
+    "department": "Emergency",
+    "qualifications": [
+      "MBBS",
+      "MD Emergency"
+    ],
+    "experience": 8,
+    "languages": [
+      "English",
+      "Hindi",
+      "Spanish"
+    ],
+    "phone": "+1-555-115-2015",
+    "email": "drmarcusthorne@medcore.com",
+    "roomNumber": "ER-02",
+    "consultationFee": 140,
+    "rating": 4.8,
+    "reviewCount": 80,
+    "status": "Available",
+    "schedule": {
+      "Monday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Tuesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Wednesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Thursday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Friday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Saturday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      },
+      "Sunday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      }
+    },
+    "bio": "Dedicated specialist in Emergency with focus on clinical excellence and empathetic patient care. Conducted over 500+ successful clinical cases."
+  },
+  {
+    "id": "DR-0017",
+    "name": "Dr. Evelyn Foster",
+    "photo": "",
+    "specialty": [
+      "Medical Dermatology",
+      "Acne & Eczema"
+    ],
+    "department": "Dermatology",
+    "qualifications": [
+      "MBBS",
+      "MD Dermatology"
+    ],
+    "experience": 9,
+    "languages": [
+      "English",
+      "Hindi"
+    ],
+    "phone": "+1-555-116-2016",
+    "email": "drevelynfoster@medcore.com",
+    "roomNumber": "G-204",
+    "consultationFee": 110,
+    "rating": 4.9,
+    "reviewCount": 84,
+    "status": "Available",
+    "schedule": {
+      "Monday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Tuesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Wednesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Thursday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Friday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Saturday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      },
+      "Sunday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      }
+    },
+    "bio": "Dedicated specialist in Dermatology with focus on clinical excellence and empathetic patient care. Conducted over 500+ successful clinical cases."
+  },
+  {
+    "id": "DR-0018",
+    "name": "Dr. Sanjay Verma",
+    "photo": "",
+    "specialty": [
+      "Dermatosurgery",
+      "Skin Cancer Surgery"
+    ],
+    "department": "Dermatology",
+    "qualifications": [
+      "MBBS",
+      "MD Dermatology"
+    ],
+    "experience": 10,
+    "languages": [
+      "English",
+      "Hindi"
+    ],
+    "phone": "+1-555-117-2017",
+    "email": "drsanjayverma@medcore.com",
+    "roomNumber": "G-205",
+    "consultationFee": 150,
+    "rating": 5,
+    "reviewCount": 88,
+    "status": "Available",
+    "schedule": {
+      "Monday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Tuesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Wednesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Thursday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Friday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Saturday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      },
+      "Sunday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      }
+    },
+    "bio": "Dedicated specialist in Dermatology with focus on clinical excellence and empathetic patient care. Conducted over 500+ successful clinical cases."
+  },
+  {
+    "id": "DR-0019",
+    "name": "Dr. Robert Carter",
+    "photo": "",
+    "specialty": [
+      "Internal Medicine",
+      "Geriatrics"
+    ],
+    "department": "General Medicine",
+    "qualifications": [
+      "MBBS",
+      "MD General Medicine"
+    ],
+    "experience": 11,
+    "languages": [
+      "English",
+      "Hindi",
+      "Spanish"
+    ],
+    "phone": "+1-555-118-2018",
+    "email": "drrobertcarter@medcore.com",
+    "roomNumber": "H-121",
+    "consultationFee": 80,
+    "rating": 4.2,
+    "reviewCount": 92,
+    "status": "Available",
+    "schedule": {
+      "Monday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Tuesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Wednesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Thursday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Friday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Saturday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      },
+      "Sunday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      }
+    },
+    "bio": "Dedicated specialist in General Medicine with focus on clinical excellence and empathetic patient care. Conducted over 500+ successful clinical cases."
+  },
+  {
+    "id": "DR-0020",
+    "name": "Dr. Meera Nair",
+    "photo": "",
+    "specialty": [
+      "Diabetology",
+      "Endocrinology"
+    ],
+    "department": "General Medicine",
+    "qualifications": [
+      "MBBS",
+      "MD General Medicine"
+    ],
+    "experience": 12,
+    "languages": [
+      "English",
+      "Hindi"
+    ],
+    "phone": "+1-555-119-2019",
+    "email": "drmeeranair@medcore.com",
+    "roomNumber": "H-122",
+    "consultationFee": 100,
+    "rating": 4.3,
+    "reviewCount": 96,
+    "status": "Available",
+    "schedule": {
+      "Monday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Tuesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Wednesday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Thursday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Friday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": true
+      },
+      "Saturday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      },
+      "Sunday": {
+        "start": "09:00 AM",
+        "end": "05:00 PM",
+        "available": false
+      }
+    },
+    "bio": "Dedicated specialist in General Medicine with focus on clinical excellence and empathetic patient care. Conducted over 500+ successful clinical cases."
+  }
+]
