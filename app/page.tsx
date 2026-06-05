@@ -9,7 +9,7 @@ import {
   Sparkles, Clock, ChevronRight, CheckCircle2,
   ExternalLink, Layers, Lock, ShieldCheck, Zap,
   MessageSquare, Star, Sun, Moon, Hospital, Heart,
-  UploadCloud, Database, GraduationCap, ChevronDown, PenTool,
+  UploadCloud, Database, GraduationCap, ChevronDown,
   Brain, BarChart2, FileSpreadsheet, AppWindow, User
 } from 'lucide-react';
 import { useStore } from '@/hooks/useStore';
@@ -620,12 +620,7 @@ export default function LandingPage() {
               MedCore transforms how hospital chains manage day-to-day coordination logs.
             </p>
           </div>
-          <a
-            href="mailto:shaillybhardwaj123@gmail.com?subject=MedCore%20User%20Review&body=Hi%20MedCore%20Team,%0A%0AI%20would%20like%20to%20share%20my%20review..."
-            className="flex items-center gap-1.5 px-5 py-2.5 bg-brand-green hover:opacity-95 text-black font-bold rounded-full text-xs transition-all outline-none uppercase tracking-wider shadow-btn"
-          >
-            <Star className="h-4 w-4 fill-current shrink-0" /> Give Review
-          </a>
+
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -746,12 +741,7 @@ export default function LandingPage() {
           </div>
 
           <div className="flex flex-col items-center gap-6 mt-8">
-            <a
-              href="mailto:shaillybhardwaj123@gmail.com?subject=MedCore%20Feedback"
-              className="flex items-center gap-1.5 px-5 py-2.5 bg-brand-amber text-black hover:opacity-95 font-bold rounded-full text-xs transition-all outline-none uppercase tracking-wider shadow-btn"
-            >
-              <PenTool className="h-4 w-4 shrink-0" /> Leave a Review (Footer)
-            </a>
+
 
             <p className="text-center text-[10px] text-[var(--text-muted)]">
               © {new Date().getFullYear()} MedCore Inc. — Consolidated Hospital Management & Operations Suite. All rights reserved.
