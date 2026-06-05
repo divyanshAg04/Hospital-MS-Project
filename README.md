@@ -87,6 +87,31 @@
 
 ---
 
+## 🔑 Access Control & User Roles
+
+The system employs a strict Role-Based Access Control (RBAC) model. Each login role has specific rights defining what they can do and how they can perform operations:
+
+*   👑 **Administrator (`admin`)**
+    *   *What they can do:* Has full read and write access across all hospital subsystems and can register new staff accounts.
+    *   *How they can do it:* Operates via the full dashboard, scheduler, patient list, billing portal, pharmacy stocks, and the [Staff Registration portal under Settings](file:///c:/Users/NITRO%205/OneDrive/Desktop/HMS-main/app/settings/page.tsx).
+*   🩺 **Doctor (`doctor`)**
+    *   *What they can do:* Manage clinical diagnoses, view patient medical histories, prescribe medications, and view scheduled consultations.
+    *   *How they can do it:* Accesses the [Patients Directory](file:///c:/Users/NITRO%205/OneDrive/Desktop/HMS-main/app/patients/page.tsx) to edit clinical logs, views upcoming visits on the [Appointments Queue](file:///c:/Users/NITRO%205/OneDrive/Desktop/HMS-main/app/appointments/page.tsx), and manages personal details under [Settings](file:///c:/Users/NITRO%205/OneDrive/Desktop/HMS-main/app/settings/page.tsx).
+*   🩹 **Nurse (`nurse`)**
+    *   *What they can do:* Check patients in, record active vital signs (BP, heart rate, spO2), check allergies, and monitor ward occupancy.
+    *   *How they can do it:* Updates records from the patient cards on the [Patients](file:///c:/Users/NITRO%205/OneDrive/Desktop/HMS-main/app/patients/page.tsx) and [Appointments](file:///c:/Users/NITRO%205/OneDrive/Desktop/HMS-main/app/appointments/page.tsx) screens, and tracks hospital admissions from the dashboard.
+*   📋 **Receptionist (`receptionist`)**
+    *   *What they can do:* Register new patient records, schedule or reschedule appointments, change shift allocations for doctors, and manage billing/invoices.
+    *   *How they can do it:* Uses the patient registration forms, the interactive calendars on the [Appointments scheduler](file:///c:/Users/NITRO%205/OneDrive/Desktop/HMS-main/app/appointments/page.tsx), doctor shift buttons, and processes checkouts inside the [Billing Portal](file:///c:/Users/NITRO%205/OneDrive/Desktop/HMS-main/app/billing/page.tsx).
+*   💊 **Pharmacist (`pharmacist`)**
+    *   *What they can do:* View medicine catalogs, restock depleted pharmaceutical supplies, and log prescription dispenses for registered patients.
+    *   *How they can do it:* Utilizes the inventory controls, Procure Medicine dialogs, and Dispense forms on the [Pharmacy Inventory](file:///c:/Users/NITRO%205/OneDrive/Desktop/HMS-main/app/pharmacy/page.tsx) screen.
+*   👤 **Patient (`patient`)**
+    *   *What they can do:* View their own medical records, check doctor directories/availability, and view pending or past bills.
+    *   *How they can do it:* Views view-only views in [Patients Directory](file:///c:/Users/NITRO%205/OneDrive/Desktop/HMS-main/app/patients/page.tsx) (for their own data), staff listings under [Doctors](file:///c:/Users/NITRO%205/OneDrive/Desktop/HMS-main/app/doctors/page.tsx), and invoice status on [Billing](file:///c:/Users/NITRO%205/OneDrive/Desktop/HMS-main/app/billing/page.tsx).
+
+---
+
 ## 📂 Project Structure
 
 Below is an overview of the key directories and architectural layers inside `medcore`:
