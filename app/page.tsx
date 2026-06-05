@@ -720,7 +720,7 @@ export default function LandingPage() {
             </div>
             <div className="flex flex-col gap-3">
               <strong className="text-[var(--text-primary)] uppercase tracking-wider text-[10px]">Support</strong>
-              <span className="text-[var(--text-muted)]">support@medcore.com</span>
+              <a href="mailto:divyanshagrawal536@gmail.com" className="hover:text-brand-cyan transition-colors text-[var(--text-secondary)] break-all">divyanshagrawal536@gmail.com</a>
               <span className="text-[var(--text-muted)]">+1 (888) 422-3324</span>
               <span className="hover:text-brand-cyan cursor-pointer transition-colors">Documentation</span>
               <span className="hover:text-brand-cyan cursor-pointer transition-colors">Status</span>
@@ -734,9 +734,9 @@ export default function LandingPage() {
             </div>
             <div className="flex flex-col gap-3">
               <strong className="text-[var(--text-primary)] uppercase tracking-wider text-[10px]">Social</strong>
-              <span className="hover:text-brand-cyan cursor-pointer transition-colors">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/divyansh-agrawal04/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-cyan transition-colors">LinkedIn</a>
               <span className="hover:text-brand-cyan cursor-pointer transition-colors">Twitter</span>
-              <span className="hover:text-brand-cyan cursor-pointer transition-colors">GitHub</span>
+              <a href="https://github.com/divyanshAg04" target="_blank" rel="noopener noreferrer" className="hover:text-brand-cyan transition-colors">GitHub</a>
             </div>
           </div>
 
