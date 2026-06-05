@@ -14,6 +14,12 @@
   A state-of-the-art, feature-rich <strong>Hospital Management System (HMS)</strong> built with <strong>Next.js 14 App Router</strong>, <strong>Mongoose</strong>, and <strong>Zustand</strong>. Offers micro-interactions, responsive views, unified patient history, pharmacy stocks, billing pipelines, and interactive analytics.
 </p>
 
+### 🚀 [Live Deployment Website](https://medcore-kw5m.onrender.com/)
+
+> 🔑 **Trial Admin Credentials** *(Only once for trial)*
+> * **Email:** `admin@medcore.com`
+> * **Password:** `admin123`
+
 [✨ Key Features](#-key-features) • [📂 Project Structure](#-project-structure) • [⚙️ Architecture Workflows](#-architecture-workflows) • [💻 Setup Guide](#-setup-guide) • [🗃️ Database Models](#%EF%B8%8F-database-models)
 
 ---
