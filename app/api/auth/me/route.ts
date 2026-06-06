@@ -70,6 +70,14 @@ export async function PUT(request: Request) {
       return NextResponse.json({ error: 'User no longer exists' }, { status: 404 });
     }
 
+    // Protect administrative email from modification
+    if (user.role === 'admin' && email.toLowerCase() !== user.email.toLowerCase()) {
+      return NextResponse.json(
+        { error: 'Modifying the administrator email address is disabled to prevent account lockout.' },
+        { status: 403 }
+      );
+    }
+
     user.name = name;
     user.email = email;
     user.updatedAt = new Date().toISOString();

@@ -148,18 +148,26 @@ export default function SettingsPage() {
 
   // Updated reset handler to reseed via API
   const handleReset = async () => {
-    // Trigger reseed endpoint
-    await fetch('/api/system/reseed');
-    // Clear local theme storage
-    if (typeof window !== 'undefined') {
-      localStorage.removeItem('medcore-theme');
+    try {
+      const response = await fetch('/api/system/reseed', {
+        method: 'POST',
+      });
+      const data = await response.json();
+      if (!response.ok) {
+        throw new Error(data.error || 'Reseed failed');
+      }
+      if (typeof window !== 'undefined') {
+        localStorage.removeItem('medcore-theme');
+      }
+      addToast('System parameters reseeded successfully!', 'success');
+      setResetWarnOpen(false);
+      setTimeout(() => {
+        window.location.reload();
+      }, 1000);
+    } catch (error: any) {
+      addToast(error.message || 'Reseed failed', 'error');
+      setResetWarnOpen(false);
     }
-    // Notify user and reload
-    addToast('System parameters reseeded successfully!', 'success');
-    setResetWarnOpen(false);
-    setTimeout(() => {
-      window.location.reload();
-    }, 1000);
   };
 
   const handleStaffRegister = async (e: React.FormEvent) => {
@@ -294,7 +302,17 @@ export default function SettingsPage() {
                       </div>
                       <div>
                         <label className={labelClass}>Email Address</label>
-                        <input type="email" value={userForm.email} onChange={e => setUserForm({...userForm, email: e.target.value})} className={inputClass} required />
+                        <input
+                          type="email"
+                          value={userForm.email}
+                          onChange={e => setUserForm({...userForm, email: e.target.value})}
+                          className={cn(inputClass, currentUser?.role === 'admin' && "opacity-50 cursor-not-allowed")}
+                          required
+                          disabled={currentUser?.role === 'admin'}
+                        />
+                        {currentUser?.role === 'admin' && (
+                          <span className="text-[9px] text-brand-red font-medium mt-1 block">Email updates are disabled for admin demo security</span>
+                        )}
                       </div>
                       <div className="sm:col-span-2">
                         <label className={labelClass}>Account Role</label>
@@ -483,17 +501,18 @@ export default function SettingsPage() {
                       </button>
                     </div>
 
-                    {/* Reseed Section */}
-                    <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 bg-brand-red/5 border border-brand-red/15 rounded-xl p-4.5">
+                    {/* Reseed Section (Disabled) */}
+                    <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 bg-brand-surface/30 border border-border rounded-xl p-4.5 opacity-60">
                       <div className="min-w-0">
-                        <h4 className="text-xs font-bold text-brand-red">Reseed Clinical Registry</h4>
-                        <p className="text-[10px] text-brand-red/60 mt-1">Erase local storage mutations and re-inject pristine mock logs</p>
+                        <h4 className="text-xs font-bold text-foreground/50">Reseed Clinical Registry</h4>
+                        <p className="text-[10px] text-foreground/40 mt-1">Erase local storage mutations and re-inject pristine mock logs</p>
+                        <span className="inline-block mt-2 text-[10px] font-bold text-brand-red uppercase tracking-wider">Disabled by system administrator</span>
                       </div>
                       <button
-                        onClick={() => setResetWarnOpen(true)}
-                        className="flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-brand-red/10 border border-brand-red/20 text-brand-red text-xs font-black hover:bg-brand-red/20 transition-all shrink-0"
+                        disabled
+                        className="flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-brand-surface border border-border text-foreground/30 text-xs font-black cursor-not-allowed shrink-0"
                       >
-                        <RefreshCw className="h-4 w-4" /> Reseed Registry
+                        <RefreshCw className="h-4 w-4 opacity-50" /> Reseed Registry
                       </button>
                     </div>
                   </div>

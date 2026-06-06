@@ -7,6 +7,26 @@ export function middleware(request: NextRequest) {
   // Retrieve the session token from cookies
   const sessionToken = request.cookies.get('medcore_session')?.value;
 
+  // Block database mutations for the demo admin account
+  if (sessionToken && ['POST', 'PUT', 'DELETE', 'PATCH'].includes(request.method)) {
+    try {
+      const parts = sessionToken.split('.');
+      if (parts.length === 3) {
+        const base64Url = parts[1];
+        const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+        const payload = JSON.parse(atob(base64));
+        if (payload.email === 'demoadmin@medcore.com') {
+          return new NextResponse(
+            JSON.stringify({ error: 'Write operations are disabled for the demo admin account.' }),
+            { status: 403, headers: { 'content-type': 'application/json' } }
+          );
+        }
+      }
+    } catch (e) {
+      // Ignore token decoding error and let authentication endpoint handle it
+    }
+  }
+
   // Paths that do NOT require authentication
   const isPublicAsset = 
     pathname.startsWith('/_next') || 

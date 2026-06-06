@@ -16,9 +16,9 @@
 
 ### 🚀 [Live Deployment Website](https://medcore-kw5m.onrender.com/)
 
-> 🔑 **Trial Admin Credentials** *(Only once for trial)*
-> * **Email:** `admin@medcore.com`
-> * **Password:** `admin123`
+> 🔑 **Demo Admin Credentials** *(Read-Only Mode)*
+> * **Email:** `demoadmin@medcore.com`
+> * **Password:** `demoadmin123`
 
 [✨ Key Features](#-key-features) • [📂 Project Structure](#-project-structure) • [⚙️ Architecture Workflows](#-architecture-workflows) • [💻 Setup Guide](#-setup-guide) • [🗃️ Database Models](#%EF%B8%8F-database-models)
 
